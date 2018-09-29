@@ -1,31 +1,31 @@
 body {
-
+    margin: 0;
 }
 
-h1 {
-   
-}
-
-li {
-
-	text-align: center;
-	border-bottom: 1px solid #555;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 25%;
-	background-color: #f1f1f1;
-	height: 100%; 
-	position: fixed; 
-	overflow: auto; 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
 li a {
-	display: block;
-	width: 60px;
-	background-color: #dddddd;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
 }
-li a:hover {
-	background-color: #555;
-	color: white;
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
