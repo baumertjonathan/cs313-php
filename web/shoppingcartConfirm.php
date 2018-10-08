@@ -22,7 +22,7 @@
 	echo "cost: $" . $cost;
 
 	echo "to be delivered to: ";
-	echo $street . ", " . $city . ", " $state . " " . $zip;
+	//echo $street . ", " . $city . ", " $state . " " . $zip;
 
 	
 
