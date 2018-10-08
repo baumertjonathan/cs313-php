@@ -2,23 +2,24 @@
 	session_start();
 	
 	$items=array();
-	if (isset($_SESSION['silly spud'])){
+	if (isset($_POST['silly spud'])){
 	array_push($items, "silly spud");
 	}
-	if (isset($_SESSION['round russett'])){
+	if (isset($_POST['round russett'])){
 	array_push($items, "round russett");
 	}
-	if (isset($_SESSION['tremendous tater'])){
+	if (isset($_POST['tremendous tater'])){
 	array_push($items, "tremendous tater");
 	}
-	if (isset($_SESSION['tasty tuber'])){
+	if (isset($_POST['tasty tuber'])){
 	array_push($items, "tasty tuber");
 	}
-	if (isset($_SESSION['yucky yam'])){
+	if (isset($_POST['yucky yam'])){
 	array_push($items, "yucky yam");
 	}
 
-	echo "---------------------------------------" $items[0] "-------------------------";
+	echo "-------------------------------" $items[0];
+
 ?>
 
 <head>
