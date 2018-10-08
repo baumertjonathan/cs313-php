@@ -19,10 +19,6 @@
 	
 	$_SESSION['items'] = $items; 
 	
-	if(isset($_POST['submit'])){
-	header("Location:https://mighty-journey-34749.herokuapp.com/shoppingcartCart.php");
-	exit();
-	}
 ?>
 
 <head>
@@ -53,6 +49,6 @@
 		
 		<input type="submit" value="submit">
 	</form>
-	
+	<p><a href=https://mighty-journey-34749.herokuapp.com/shoppingcartCart.html>Visit Shopping cart</a></p>
 </div>
 
