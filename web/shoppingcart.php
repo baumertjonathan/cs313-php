@@ -1,9 +1,25 @@
 <?php
 	session_start();
-	$item = array();
+	$items = array();
 	if(isset($_POST['sillyspud'])){
-	array_push($item, "silly spud");
-	echo $item[0];
+	array_push($items, "silly spud");
+	}
+	if(isset($_POST['roundrussett'])){
+	array_push($items, "round russett");
+	}
+	if(isset($_POST['tremendoustater'])){
+	array_push($items, "tremendous tater");
+	}
+	if(isset($_POST['tastytuber'])){
+	array_push($items, "tasty tuber");
+	}
+	if(isset($_POST['yuckyyam'])){
+	array_push($items, "yucky yam");
+	}
+	$arraylength = count($items);
+
+	for($x=0; x<$arraylength; $x++){
+	echo $items[$x];
 	}
 ?>
 
