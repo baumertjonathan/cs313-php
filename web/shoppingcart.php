@@ -1,5 +1,10 @@
 <?php
 	session_start();
+
+	if(isset($_POST['silly spud'])){
+	$item = "silly spud";
+	echo "----------------------------------" $item;
+	}
 ?>
 
 <head>
