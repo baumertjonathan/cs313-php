@@ -1,4 +1,24 @@
-<!DOCTYPE html>
+<?php
+	session_start();
+	
+	$items=array();
+	if (isset($_SESSION['silly spud'])){
+	array_push($items, "silly spud");
+	}
+	if (isset($_SESSION['round russett'])){
+	array_push($items, "round russett");
+	}
+	if (isset($_SESSION['tremendous tater'])){
+	array_push($items, "tremendous tater");
+	}
+	if (isset($_SESSION['tasty tuber'])){
+	array_push($items, "tasty tuber");
+	}
+	if (isset($_SESSION['yucky yam'])){
+	array_push($items, "yucky yam");
+	}
+?>
+
 <head>
 	<title>Shopping Page</title>
 	<link rel="stylesheet" href="styles.css">
@@ -19,12 +39,13 @@
 	
 	<form method="post" action="shoppingcart.php">
 		<ul>
-			<li>1 silly spud        $5 <input type="button" value="add to cart"></li>
-			<li>1 round russett     $2 <input type="button" value="add to cart"></li>
-			<li>1 tremendous tater  $7 <input type="button" value="add to cart"></li>
-			<li>1 tasty tuber       $3 <input type="button" value="add to cart"></li>
-			<li>1 yucky yam         $1 <input type="button" value="add to cart"></li>	
+			<li>silly spud        $5 <input type="checkbox" name="silly spud" value="add to cart"></li>
+			<li>round russett     $2 <input type="checkbox" name="round russett" value="add to cart"></li>
+			<li>tremendous tater  $7 <input type="checkbox" name="tremendous tater" value="add to cart"></li>
+			<li>tasty tuber       $3 <input type="checkbox" name="tasty tuber" value="add to cart"></li>
+			<li>yucky yam         $1 <input type="checkbox" name="yucky yam" value="add to cart"></li>	
 		</ul>
+		<input type="submit" value="submit">
 	</form>
 	
 </div>
