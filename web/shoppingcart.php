@@ -18,7 +18,7 @@
 	}
 	$arraylength = count($items);
 
-	for($x=0; x<$arraylength; $x++){
+	for($x=0; $x<$arraylength; $x++){
 	echo $items[$x];
 	}
 ?>
