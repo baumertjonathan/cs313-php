@@ -57,4 +57,4 @@
 	</form>
 	<p><a href=https://mighty-journey-34749.herokuapp.com/shoppingcartCart.php>Visit Shopping cart</a></p>
 </div>
-
+</body>
