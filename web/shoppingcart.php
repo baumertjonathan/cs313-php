@@ -21,7 +21,7 @@
 	
 	if(isset($_SESSION['items'])){
 	$url = shoppingcartCart.php;
-	header(https://mighty-journey-34749.herokuapp.com/shoppingcartCart.php;
+	header("Location:https://mighty-journey-34749.herokuapp.com/shoppingcartCart.php");
 	exit();
 	}
 ?>
