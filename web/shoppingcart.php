@@ -1,9 +1,9 @@
 <?php
 	session_start();
-
+	$item = array();
 	if(isset($_POST['sillyspud'])){
-	$item = "silly spud";
-	echo $item;
+	array_push($item, "silly spud");
+	echo $item[0];
 	}
 ?>
 
