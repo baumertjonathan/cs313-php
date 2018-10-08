@@ -1,11 +1,5 @@
 <?php
 	session_start();
-	
-	$items=array();
-
-
-	echo "-------------------------------" $items[0];
-
 ?>
 
 <head>
