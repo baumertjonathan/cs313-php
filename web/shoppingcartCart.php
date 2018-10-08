@@ -9,5 +9,5 @@
 	echo $items[$x];
 	echo "<br>";
 	}
-	echo "cost: $" $cost;
+	echo "cost: $" . $cost;
 ?>
