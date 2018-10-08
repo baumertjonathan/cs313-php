@@ -20,9 +20,13 @@
 	}
 	
 	echo "cost: $" . $cost;
+	echo "<br>";
 
 	echo "to be delivered to: ";
-	//echo $street . ", " . $city . ", " $state . " " . $zip;
+	echo $street;
+	echo $city;
+	echo $state;
+	echo $zip;
 
 	
 
