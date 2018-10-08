@@ -16,10 +16,13 @@
 	if(isset($_POST['yuckyyam'])){
 	array_push($items, "yucky yam");
 	}
-	$arraylength = count($items);
-
-	for($x=0; $x<$arraylength; $x++){
-	echo $items[$x];
+	
+	$_SESSION['items'] = $items; 
+	
+	if(isset($_SESSION['items'])){
+	$url = shoppingcartCart.php;
+	header(string: 'Location: ' . $url;
+	exit();
 	}
 ?>
 
