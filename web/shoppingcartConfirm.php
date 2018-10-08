@@ -11,8 +11,8 @@
 	$zip = $_SESSION['zip'];
 
 	//display section
-	echo "Order Confirmed";
-	echo "Items purchaced: ";
+	echo "Order Confirmed <br>";
+	echo "Items purchaced: <br>";
 	
 	for($x = 0; $x < $arrlength; $x++){
 	echo $items[$x];
@@ -23,9 +23,9 @@
 	echo "<br>";
 
 	echo "to be delivered to: ";
-	echo $street;
-	echo $city;
-	echo $state;
+	echo $street . " ";
+	echo $city . " ";
+	echo $state . " ";
 	echo $zip;
 
 	
