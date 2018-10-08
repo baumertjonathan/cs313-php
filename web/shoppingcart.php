@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	if(isset($_POST['silly spud'])){
+	if(isset($_POST['sillyspud'])){
 	$item = "silly spud";
 	echo "----------------------------------" $item;
 	}
@@ -27,11 +27,11 @@
 	
 	<form method="post" action="shoppingcart.php">
 		
-			<p>silly spud        $5 <input type="checkbox" name="silly spud" value="add to cart"></p>
-			<p>round russett     $2 <input type="checkbox" name="round russett" value="add to cart"></p>
-			<p>tremendous tater  $7 <input type="checkbox" name="tremendous tater" value="add to cart"></p>
-			<p>tasty tuber       $3 <input type="checkbox" name="tasty tuber" value="add to cart"></p>
-			<p>yucky yam         $1 <input type="checkbox" name="yucky yam" value="add to cart"></p>	
+			<p>silly spud        $5 <input type="checkbox" name="sillyspud" value="sillyspud"></p>
+			<p>round russett     $2 <input type="checkbox" name="roundrussett" value="roundrussett"></p>
+			<p>tremendous tater  $7 <input type="checkbox" name="tremendoustater" value="tremendoustater"></p>
+			<p>tasty tuber       $3 <input type="checkbox" name="tastytuber" value="tastytuber"></p>
+			<p>yucky yam         $1 <input type="checkbox" name="yuckyyam" value="yuckyyam"></p>	
 		
 		<input type="submit" value="submit">
 	</form>
