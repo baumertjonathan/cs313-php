@@ -1,24 +1,30 @@
 <?php
 	session_start();
+	$cost = 0;
 	$items = array();
 	if(isset($_POST['sillyspud'])){
 	array_push($items, "silly spud");
+	$cost += 5;
 	}
 	if(isset($_POST['roundrussett'])){
 	array_push($items, "round russett");
+	$cost += 2;
 	}
 	if(isset($_POST['tremendoustater'])){
 	array_push($items, "tremendous tater");
+	$cost += 7;
 	}
 	if(isset($_POST['tastytuber'])){
 	array_push($items, "tasty tuber");
+	$cost += 3;
 	}
 	if(isset($_POST['yuckyyam'])){
 	array_push($items, "yucky yam");
+	$cost += 1;
 	}
 	
 	$_SESSION['items'] = $items; 
-	
+	$_SESSION['cost'] = $cost;
 ?>
 
 <head>
