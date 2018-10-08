@@ -17,6 +17,8 @@
 	if (isset($_SESSION['yucky yam'])){
 	array_push($items, "yucky yam");
 	}
+
+	echo "---------------------------------------" $items[0] "-------------------------";;
 ?>
 
 <head>
