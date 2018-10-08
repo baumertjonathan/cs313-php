@@ -19,8 +19,7 @@
 	
 	$_SESSION['items'] = $items; 
 	
-	if(isset($_SESSION['items'])){
-	$url = shoppingcartCart.php;
+	if(isset($_POST['submit'])){
 	header("Location:https://mighty-journey-34749.herokuapp.com/shoppingcartCart.php");
 	exit();
 	}
