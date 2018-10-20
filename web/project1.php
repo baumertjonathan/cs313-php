@@ -1,5 +1,5 @@
 <?php
-
+//connect with database
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -20,6 +20,15 @@ catch (PDOException $ex)
 {
   echo 'Error!: ' . $ex->getMessage();
   die();
+}
+
+//queries
+
+foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
+{
+  echo 'user: ' . $row['location'];
+  echo ' password: ' . $row['shine_score'];
+  echo '<br/>';
 }
 
 ?>
