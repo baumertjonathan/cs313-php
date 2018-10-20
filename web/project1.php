@@ -23,11 +23,10 @@ catch (PDOException $ex)
 }
 
 //queries
-
 foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
 {
-  echo 'user: ' . $row['location'];
-  echo ' password: ' . $row['shine_score'];
+  echo 'floor: ' . $row['location'];
+  echo 'shine_score: ' . $row['shine_score'];
   echo '<br/>';
 }
 
@@ -49,7 +48,14 @@ foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
 
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
 	<h2>Project 1</h2>
-	
+<?php
+	foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
+{
+  echo 'floor: ' . $row['location'];
+  echo 'shine_score: ' . $row['shine_score'];
+  echo '<br/>';
+}
+?>	
 	
 </div>
 </body>
