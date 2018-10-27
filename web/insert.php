@@ -30,8 +30,8 @@ $tileScore = $_POST['tileScore'];
 $username = $_POST['username'];
 
 //$stmt = $db->prepare('INSERT INTO submissions (username, location, shine_score, scruff_score, dirt_score tile_score) VALUES (:username, :floor, :shineScore, :scruffScore, :dirtScore', :tileScore);');
-//$stmt = $db->prepare('INSERT INTO floors (location, shine_score, scruff_score, dirt_score tile_score) VALUES (:floor, :shineScore, :scruffScore, :dirtScore', :tileScore);');
-//$stmt->execute();
+$stmt = $db->prepare('INSERT INTO floors (location, shine_score, scruff_score, dirt_score tile_score) VALUES (:floor, :shineScore, :scruffScore, :dirtScore', :tileScore);');
+$stmt->execute();
 
 //$sql = "INSERT INTO submissions (username, location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$username', '$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
 //$sql = "INSERT INTO floors(location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
