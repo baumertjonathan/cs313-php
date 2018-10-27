@@ -22,7 +22,7 @@ catch (PDOException $ex)
   die();
 }
 
-$floor = $_POST('floor');
+$floor = $_POST['floor'];
 $shineScore = $_POST['shineScore'];
 $scuffScore = $_POST['scuffScore'];
 $dirtScore = $_POST['dirtScore'];
