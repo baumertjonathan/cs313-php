@@ -57,7 +57,7 @@ foreach ($db->query('SELECT location, shine_score, scuff_score, dirt_score, tile
 
 echo '<h2>Submissions</h2>';
 
-foreach ($db->query('SELECT username, location, shine_score, scuff_score, dirt_score, tile_scor FROM submissions') as $row)
+foreach ($db->query('SELECT username, location, shine_score, scuff_score, dirt_score, tile_score FROM submissions') as $row)
 {
 	echo 'username: ' . $row['username'];
 	echo 'floor: ' . $row['location'];
