@@ -29,6 +29,10 @@ $dirtScore = $_POST['dirtScore'];
 $tileScore = $_POST['tileScore'];
 $username = $_POST['username'];
 
+$sql = "INSERT INTO submissions (username, location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$username', '$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
+
+$sql = "INSERT INTO floors(location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
+
 ?>
 
 <head>
@@ -48,11 +52,12 @@ $username = $_POST['username'];
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
 	<h2>Project 1</h2>
 <?php
-echo 'submission received';
+echo 'submission received for the ';
 echo $floor;
-echo 'processed';
 
 ?>	
+<br>
+<a href=https://mighty-journey-34749.herokuapp.com/project1Display.html>return to project 1</a>
 	
 </div>
 </body>
