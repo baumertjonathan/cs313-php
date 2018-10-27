@@ -22,18 +22,35 @@ catch (PDOException $ex)
   die();
 }
 
-//$floor = $_POST['floor'];
-//$shineScore = $_POST['shineScore'];
-//$scuffScore = $_POST['scuffScore'];
-//$dirtScore = $_POST['dirtScore'];
-//$tileScore = $_POST['tileScore'];
-//$username = $_POST['username'];
 
-//$sql = "INSERT INTO submissions (username, location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$username', '$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
-
-//$sql = "INSERT INTO floors(location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
-
-echo ="submission for";
-//echo = '$floor'
 
 ?>
+
+<head>
+	<title>Project 1</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<ul>
+	<li><a href=https://mighty-journey-34749.herokuapp.com/hello.html>Home Page</a></li>
+	<li><a href=https://mighty-journey-34749.herokuapp.com/shoppingcart.php>Shopping Cart</a></li>
+	<li><a href=https://mighty-journey-34749.herokuapp.com/hello.html>...</a></li>
+	<li><a href=https://mighty-journey-34749.herokuapp.com/hello.html>...</a></li>
+	<li><a href=https://mighty-journey-34749.herokuapp.com/hello.html>...</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+	<h2>Project 1</h2>
+<?php
+	foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
+{
+  echo 'floor: ' . $row['location'];
+  echo ' shine score: ' . $row['shine_score'];
+  echo '<br/>';
+}
+
+?>	
+	
+</div>
+</body>
