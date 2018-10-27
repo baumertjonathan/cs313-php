@@ -45,9 +45,20 @@ catch (PDOException $ex)
 <?php
 	foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
 {
+ foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
+{
   echo 'floor: ' . $row['location'];
   echo ' shine score: ' . $row['shine_score'];
+  echo ' scuff score: ' . $row['scuff_score'];
+  echo ' dirt score: ' . $row['dirt_score'];
+  echo ' tile score: ' . $row['tile_score'];
   echo '<br/>';
+}
+
+foreach ($db->query('SELECT username FROM submissions') as $row)
+{
+	echo 'username: ' . $row['username'];
+}
 }
 
 ?>	

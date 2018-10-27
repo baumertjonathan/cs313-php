@@ -47,6 +47,9 @@ catch (PDOException $ex)
 {
   echo 'floor: ' . $row['location'];
   echo ' shine score: ' . $row['shine_score'];
+  echo ' scuff score: ' . $row['scuff_score'];
+  echo ' dirt score: ' . $row['dirt_score'];
+  echo ' tile score: ' . $row['tile_score'];
   echo '<br/>';
 }
 
