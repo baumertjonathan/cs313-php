@@ -22,18 +22,18 @@ catch (PDOException $ex)
   die();
 }
 
-$floor = $_POST['floor'];
-$shineScore = $_POST['shineScore'];
-$scuffScore = $_POST['scuffScore'];
-$dirtScore = $_POST['dirtScore'];
-$tileScore = $_POST['tileScore'];
-$username = $_POST['username'];
+//$floor = $_POST['floor'];
+//$shineScore = $_POST['shineScore'];
+//$scuffScore = $_POST['scuffScore'];
+//$dirtScore = $_POST['dirtScore'];
+//$tileScore = $_POST['tileScore'];
+//$username = $_POST['username'];
 
 //$sql = "INSERT INTO submissions (username, location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$username', '$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
 
 //$sql = "INSERT INTO floors(location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
 
 echo ="submission for";
-echo = '$floor'
+//echo = '$floor'
 
 ?>
