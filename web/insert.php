@@ -11,6 +11,8 @@ $dirtScore = htmlspecialchars($_POST['dirtScore']);
 $tileScore = htmlspecialchars($_POST['tileScore']);
 $username = htmlspecialchars($_POST['username']);
 
+$stmt = $db->prepare('INSERT INTO floors(location, shine_score) VALUES ($floor, $shineScore);
+$stmt->execute();
 
 //$stmt = $db->prepare('INSERT INTO submissions(username, location, shine_score, scrff_score, dirt_score, tile_score) VALUES ($username, $floor, $shineScore, $scuffScore, $dirtScore, $tileScore);');
 //$stmt = $db->prepare('INSERT INTO floors(location, shine_score, scuff_score, dirt_score, tile_score) VALUES ($floor, $shineScore, $scuffScore, $dirtScore, $tileScore);');
@@ -53,6 +55,7 @@ echo $shineScore;
 echo $dirtScore;
 echo $scuffScore;
 echo $tileScore;
+echo $username;
 ?>	
 <br>
 <a href=https://mighty-journey-34749.herokuapp.com/project1Display.php>return to project 1</a>
