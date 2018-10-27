@@ -29,7 +29,7 @@ $dirtScore = $_POST['dirtScore'];
 $tileScore = $_POST['tileScore'];
 $username = $_POST['username'];
 
-$sql = "INSERT INTO submissions (username, location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$username', '$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
+//$sql = "INSERT INTO submissions (username, location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$username', '$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
 
 $sql = "INSERT INTO floors(location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
 
@@ -52,7 +52,7 @@ $sql = "INSERT INTO floors(location, shine_score, scruff_score, dirt_score tile_
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
 	<h2>Project 1</h2>
 <?php
-echo 'submission received for the ';
+echo 'submission received for ';
 echo $floor;
 
 ?>	
