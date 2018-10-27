@@ -43,7 +43,9 @@ catch (PDOException $ex)
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
 	<h2>Submit A Rating</h2>
 
-	<form method="post" action="project1Submit.php">
+	<form method="post" action="insert.php">
+		Name: 
+		<input type="text" name="username">
 		Floor:
 		<select name="floors">
 			<option value="hart">Hart</option>
@@ -93,8 +95,21 @@ catch (PDOException $ex)
 			<option value="9">9</option>
 			<option value="10">10</option>
 		</select>
+		Tile score:
+		<select name="tileScore">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
 		
-		<input type="submit" value="submit">
+		<input type="submit" value="submitRating">
 	</form>
 	
 </div>
