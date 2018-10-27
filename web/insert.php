@@ -29,8 +29,8 @@ $dirtScore = $_POST['dirtScore'];
 $tileScore = $_POST['tileScore'];
 $username = htmlspecialchars($_POST['username']);
 
-$stmt = $db->prepare('INSERT INTO submissions(username, location, shine_score, scrff_score, dirt_score tile_score) VALUES (:username, :floor, :shineScore, :scuffScore, :dirtScore', :tileScore);');
-$stmt = $db->prepare('INSERT INTO floors(location, shine_score, scuff_score, dirt_score tile_score) VALUES (:floor, :shineScore, :scuffScore, :dirtScore', :tileScore);');
+$stmt = $db->prepare('INSERT INTO submissions(username, location, shine_score, scrff_score, dirt_score, tile_score) VALUES (:username, :floor, :shineScore, :scuffScore, :dirtScore', :tileScore);');
+$stmt = $db->prepare('INSERT INTO floors(location, shine_score, scuff_score, dirt_score, tile_score) VALUES (:floor, :shineScore, :scuffScore, :dirtScore', :tileScore);');
 $stmt->bindValue(':floor', $floor, PDO::PARAM_STR);
 $stmt->bindValue(':shineScore', $shineScore, PDO::PARAM_INT);
 $stmt->bindValue(':scuffScore', $scuffScore, PDO::PARAM_INT);
@@ -39,8 +39,6 @@ $stmt->bindValue(':tileScore', $tileScore, PDO::PARAM_INT);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 
-//$sql = "INSERT INTO submissions (username, location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$username', '$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
-//$sql = "INSERT INTO floors(location, shine_score, scruff_score, dirt_score tile_score) VALUES ('$floor', '$shineScore', '$scruffScore', 'dirtScore', 'tileScore');
 
 ?>
 
@@ -68,7 +66,7 @@ echo $shineScore;
 
 ?>	
 <br>
-<a href=https://mighty-journey-34749.herokuapp.com/project1Display.html>return to project 1</a>
+<a href=https://mighty-journey-34749.herokuapp.com/project1Display.php>return to project 1</a>
 	
 </div>
 </body>
