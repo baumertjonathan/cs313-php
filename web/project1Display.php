@@ -41,9 +41,16 @@ catch (PDOException $ex)
 </ul>
 
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+	<h2>Project 1</h2>
+<?php
+	foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
+{
+  echo 'floor: ' . $row['location'];
+  echo ' shine score: ' . $row['shine_score'];
+  echo '<br/>';
+}
 
-<a href=https://mighty-journey-34749.herokuapp.com/project1Display.php.html>View ratings</a>
-<a href=https://mighty-journey-34749.herokuapp.com/project1Submit.php.html>submit a rating</a>
+?>	
 	
 </div>
 </body>
