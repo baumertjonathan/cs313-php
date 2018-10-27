@@ -11,7 +11,7 @@ $dirtScore = htmlspecialchars($_POST['dirtScore']);
 $tileScore = htmlspecialchars($_POST['tileScore']);
 $username = htmlspecialchars($_POST['username']);
 
-$stmt = $db->prepare('INSERT INTO floors(location, shine_score, scuff_score, dirt_score, tile_score) VALUES ('MC', $shineScore, $scuffScore, $dirtScore, $tileScore);');
+$stmt = $db->prepare('INSERT INTO floors(location, shine_score, scuff_score, dirt_score, tile_score) VALUES ('MC', 1, 2, 3, 4);');
 $stmt->execute();
 
 
