@@ -65,6 +65,7 @@ foreach ($db->query('SELECT username, location, shine_score, scuff_score, dirt_s
 	  echo ' scuff score: ' . $row['scuff_score'];
 	  echo ' dirt score: ' . $row['dirt_score'];
  	 echo ' tile score: ' . $row['tile_score'];
+	echo '<br/>';
 }
 
 
