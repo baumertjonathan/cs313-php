@@ -37,7 +37,7 @@ $stmt->bindValue(':scuffScore', $scuffScore, PDO::PARAM_INT);
 $stmt->bindValue(':dirtScore', $dirtScore, PDO::PARAM_INT);
 $stmt->bindValue(':tileScore', $tileScore, PDO::PARAM_INT);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
-$stmt->execute();
+//$stmt->execute();
 
 
 ?>
