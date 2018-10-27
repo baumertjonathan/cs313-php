@@ -22,7 +22,12 @@ catch (PDOException $ex)
   die();
 }
 
-
+$floor = $_POST['floor'];
+$shineScore = $_POST['shineScore'];
+$scuffScore = $_POST['scuffScore'];
+$dirtScore = $_POST['dirtScore'];
+$tileScore = $_POST['tileScore'];
+$username = $_POST['username'];
 
 ?>
 
@@ -44,6 +49,7 @@ catch (PDOException $ex)
 	<h2>Project 1</h2>
 <?php
 echo 'submission received';
+echo $floor;
 
 ?>	
 	
