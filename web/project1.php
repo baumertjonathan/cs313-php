@@ -42,8 +42,8 @@ catch (PDOException $ex)
 
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
 
-<a href=https://mighty-journey-34749.herokuapp.com/project1Display.php.html>View ratings</a>
-<a href=https://mighty-journey-34749.herokuapp.com/project1Submit.php.html>submit a rating</a>
+<a href=https://mighty-journey-34749.herokuapp.com/project1Display.php>View ratings</a>
+<a href=https://mighty-journey-34749.herokuapp.com/project1Submit.php>submit a rating</a>
 	
 </div>
 </body>
