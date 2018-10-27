@@ -1,7 +1,8 @@
 <?php
+
 //connect with database
-require('dbConnect.php');
-$db = get_db();
+//require('dbConnect.php');
+//$db = get_db();
 
 $floor = htmlspecialchars($_POST['floors']);
 $shineScore = htmlspecialchars($_POST['shineScore']);
