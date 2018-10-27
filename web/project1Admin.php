@@ -43,9 +43,9 @@ catch (PDOException $ex)
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
 	<h2>Project 1</h2>
 <?php
-	foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
-{
- foreach ($db->query('SELECT location, shine_score FROM floors') as $row)
+echo '<h2>Floors</h2>';
+	
+foreach ($db->query('SELECT location, shine_score, scuff_score, dirt_score, tile_score FROM floors') as $row)
 {
   echo 'floor: ' . $row['location'];
   echo ' shine score: ' . $row['shine_score'];
@@ -55,11 +55,18 @@ catch (PDOException $ex)
   echo '<br/>';
 }
 
-foreach ($db->query('SELECT username FROM submissions') as $row)
+echo '<h2>Submissions</h2>';
+
+foreach ($db->query('SELECT username, location, shine_score, scuff_score, dirt_score, tile_scor FROM submissions') as $row)
 {
 	echo 'username: ' . $row['username'];
+	echo 'floor: ' . $row['location'];
+ 	 echo ' shine score: ' . $row['shine_score'];
+	  echo ' scuff score: ' . $row['scuff_score'];
+	  echo ' dirt score: ' . $row['dirt_score'];
+ 	 echo ' tile score: ' . $row['tile_score'];
 }
-}
+
 
 ?>	
 	
