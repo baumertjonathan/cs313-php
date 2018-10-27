@@ -22,15 +22,15 @@ catch (PDOException $ex)
   die();
 }
 
-$floor = $_POST['floors'];
-$shineScore = $_POST['shineScore'];
-$scuffScore = $_POST['scuffScore'];
-$dirtScore = $_POST['dirtScore'];
-$tileScore = $_POST['tileScore'];
+$floor = htmlspecialchars($_POST['floors']);
+$shineScore = htmlspecialchars($_POST['shineScore']);
+$scuffScore = htmlspecialchars($_POST['scuffScore']);
+$dirtScore = htmlspecialchars($_POST['dirtScore']);
+$tileScore = htmlspecialchars($_POST['tileScore']);
 $username = htmlspecialchars($_POST['username']);
 
-$stmt = $db->prepare('INSERT INTO submissions(username, location, shine_score, scrff_score, dirt_score, tile_score) VALUES (:username, :floor, :shineScore, :scuffScore, :dirtScore', :tileScore);');
-$stmt = $db->prepare('INSERT INTO floors(location, shine_score, scuff_score, dirt_score, tile_score) VALUES (:floor, :shineScore, :scuffScore, :dirtScore', :tileScore);');
+$stmt = $db->prepare('INSERT INTO submissions(username, location, shine_score, scrff_score, dirt_score, tile_score) VALUES (:username, :floor, :shineScore, :scuffScore, :dirtScore, :tileScore);');
+$stmt = $db->prepare('INSERT INTO floors(location, shine_score, scuff_score, dirt_score, tile_score) VALUES (:floor, :shineScore, :scuffScore, :dirtScore, :tileScore);');
 $stmt->bindValue(':floor', $floor, PDO::PARAM_STR);
 $stmt->bindValue(':shineScore', $shineScore, PDO::PARAM_INT);
 $stmt->bindValue(':scuffScore', $scuffScore, PDO::PARAM_INT);
