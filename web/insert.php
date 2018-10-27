@@ -1,8 +1,8 @@
 <?php
 
 //connect with database
-//require('dbConnect.php');
-//$db = get_db();
+require('dbConnect.php');
+$db = get_db();
 
 $floor = htmlspecialchars($_POST['floors']);
 $shineScore = htmlspecialchars($_POST['shineScore']);
@@ -23,7 +23,7 @@ $username = htmlspecialchars($_POST['username']);
 //$stmt->bindValue(':dirtScore', $dirtScore, PDO::PARAM_INT);
 //$stmt->bindValue(':tileScore', $tileScore, PDO::PARAM_INT);
 //$stmt->bindValue(':username', $username, PDO::PARAM_STR);
-$stmt->execute();
+//$stmt->execute();
 
 
 ?>
