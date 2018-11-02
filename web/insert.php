@@ -78,7 +78,18 @@ echo $scuffScore;
 echo $tileScore;
 echo $username;
 ?>	
+<?php
+	foreach ($db->query('SELECT location, shine_score, scuff_score, dirt_score, tile_score FROM floors') as $row)
+{
+  echo 'floor: ' . $row['location'];
+  echo ' shine score: ' . $row['shine_score'];
+  echo ' scuff score: ' . $row['scuff_score'];
+  echo ' dirt score: ' . $row['dirt_score'];
+  echo ' tile score: ' . $row['tile_score'];
+  echo '<br/>';
+}
 
+?>	
 <a href=https://mighty-journey-34749.herokuapp.com/project1Display.php>return to project 1</a>
 	
 
