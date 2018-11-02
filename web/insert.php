@@ -40,7 +40,6 @@ $dirtScore = htmlspecialchars($_POST['dirtScore']);
 $tileScore = htmlspecialchars($_POST['tileScore']);
 $username = htmlspecialchars($_POST['username']);
 
-
 $stmt = $db->prepare('INSERT INTO submissions(username, location, shine_score, scuff_score, dirt_score, tile_score) VALUES (:username, :floor, :shineScore, :scuffScore, :dirtScore, :tileScore);');
 $stmt->bindValue(':floor', $floor, PDO::PARAM_STR);
 $stmt->bindValue(':shineScore', $shineScore, PDO::PARAM_INT);
@@ -60,7 +59,6 @@ $stmt->bindValue(':tileScore', $tileScore, PDO::PARAM_INT);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
 
 $stmt->execute();
-*/
 
 ?>
 
