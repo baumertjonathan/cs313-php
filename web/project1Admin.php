@@ -28,6 +28,17 @@ catch (PDOException $ex)
 
 
 <script>
+
+function FloorsAVGFunction() {
+    var x = document.getElementById("FloorsDiv");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
 function FloorsFunction() {
     var x = document.getElementById("FloorsDiv");
     if (x.style.display === "none") {
@@ -67,6 +78,7 @@ function SubmissionsFunction() {
 
  
 <?php
+
 echo '<h2>Floors</h2>';
 echo '<button onclick="FloorsFunction()">View</button>';
 echo '<div id="FloorsDiv" display: none>';
