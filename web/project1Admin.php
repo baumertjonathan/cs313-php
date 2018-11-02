@@ -69,7 +69,7 @@ function SubmissionsFunction() {
 <?php
 echo '<h2>Floors</h2>';
 echo '<button onclick="FloorsFunction()">View</button>';
-echo '<div id="FloorsDiv" styles.display="none">';
+echo '<div id="FloorsDiv" display: none>';
 foreach ($db->query('SELECT location, shine_score, scuff_score, dirt_score, tile_score FROM floors') as $row)
 {
   echo ' floor: ' . $row['location'];
@@ -82,7 +82,7 @@ foreach ($db->query('SELECT location, shine_score, scuff_score, dirt_score, tile
 echo '</div>';
 echo '<h2>Submissions</h2>';
 echo '<button onclick="SubmissionsFunction()">View</button>';
-echo '<div id="SubmissionsDiv" styles.display="none">';
+echo '<div id="SubmissionsDiv" display: none>';
 foreach ($db->query('SELECT username, location, shine_score, scuff_score, dirt_score, tile_score FROM submissions') as $row)
 {
 	echo 'username: ' . $row['username'];
