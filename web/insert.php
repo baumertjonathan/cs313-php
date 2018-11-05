@@ -69,14 +69,13 @@ $stmt->execute();
 <?php
 echo 'submission received for ';
 echo $floor;
-echo 'scoring';
+echo 'scoring ';
 echo $shineScore;
 echo $dirtScore;
 echo $scuffScore;
 echo $tileScore;
 echo $username;
-?>	
-<?php
+
 	foreach ($db->query('SELECT location, shine_score, scuff_score, dirt_score, tile_score FROM floors') as $row)
 {
   echo 'floor: ' . $row['location'];
